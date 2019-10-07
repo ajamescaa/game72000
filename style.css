@@ -1,0 +1,147 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+}
+
+p {
+	color: #FFFFFF;
+	overflow: auto;
+	text-align: center;
+	font-family: 'sportsFont', sans-serif;
+	font-size: 148%;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h1 {
+	color: #FFFFFF; <!--color to set the colums--> 
+	text-align: center;
+	font-family: 'sportsFont', sans-serif;
+	font-size: 148%;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+.column {
+	height: calc(100% - 1px);
+	width: calc(100%/3);
+	display: block;
+}
+
+.links {
+	height: calc(100% - 2px);
+	width: calc(100%/3 - 1px);
+	display: flex;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.content {
+	height: 50%;
+	width: calc(100%-1px);
+	display: flex;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.column-space {
+	height: 90%;
+	width: 100%;
+	display: flex;
+}
+
+.link-space {
+	height: 10%;
+	width: 100%;
+	display: flex;
+}
+
+/* Here, we have our colors that will be used throughout the web page. */
+
+.purple {
+	background-color: #552583;
+}
+
+.purpleswap {
+	background-color: #552583;
+}
+
+.gold {
+	background-color: #FDB927;
+}
+
+.goldswap {
+	background-color: #FDB927;
+}
+
+.red {
+	background-color: #C9082A;
+}
+
+.darkred {
+	background-color: #B20723;
+}
+
+/* Here, we have the image resizing/aligning classes. */
+
+.align {
+	justify-content: center;
+	align-items: center;
+}
+
+.contain-image {       <!--This sets all images that we use--> 
+	max-height: 90%;
+	max-width: 90%;
+}
+
+/* In this code, we are calling upon a custom font to use for our website. */
+
+@font-face {
+	font-family: 'sportsFont';
+	src: 
+		url('fonts/oldsport.ttf');
+		format('opentype');
+}
+
+@media screen and (max-width: 600px) {	<--This is telling our webpage to shirnk at a certaimn point to fix itslef-->
+body {
+	height: 167%;
+}
+h1 {
+	font-size: 110%;
+}
+
+
+.column-space {
+	display: block;
+}
+.link-space {
+	display: block;
+}
+.links {
+	height: calc(100%/3);
+	width: 100%;
+}
+.column {
+	height: calc(100%/3);
+	width: 100%;
+}
+
+.purpleswap {
+	background-color: #FDB927;
+}
+
+.goldswap {
+	background-color: #552583;
+}
+
+.contain-image {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+}
